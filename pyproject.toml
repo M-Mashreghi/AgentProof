@@ -41,6 +41,21 @@ packages = ["src/agentproof"]
 testpaths = ["tests"]
 pythonpath = ["src"]
 addopts = "-q --strict-config --strict-markers"
+markers = [
+  "integration: tests that touch the filesystem or subprocesses beyond pure units",
+]
 
 [tool.ruff]
 line-length = 100
+target-version = "py311"
+extend-exclude = [".venv", "data", "reports"]
+
+[tool.ruff.lint]
+# Explicit rule selection keeps lint results stable across ruff releases.
+select = ["E", "F", "W", "I", "B", "UP"]
+
+[tool.mypy]
+python_version = "3.11"
+mypy_path = "src"
+packages = ["agentproof"]
+strict = true

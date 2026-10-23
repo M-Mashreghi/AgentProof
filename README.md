@@ -204,4 +204,14 @@ Agent + Model + Scaffold + Tools
        PASS / WARN / BLOCK + Report
 ```
 
+## Development
+
+Requires Python 3.11+.
+
+```bash
+python -m pip install -e ".[dev]"   # or: make install
+make ci                              # ruff + mypy + pytest + repository validator
+agentproof version                   # also: python -m agentproof version
+```
+
 Start implementation with Task 1.1 in `docs/PROJECT_PHASES_AND_TASKS.md`.

@@ -14,7 +14,7 @@ Every task must preserve benchmark integrity, independent repeated runs, hidden-
 
 ### Task 1.1: Python Package Scaffold & Development Tooling
 
-**Status:** `[ ]` Not Started  
+**Status:** `[x]` Completed\
 **Depends on:** `None`
 
 **Task Contract**
@@ -23,14 +23,14 @@ Every task must preserve benchmark integrity, independent repeated runs, hidden-
 - Add deterministic tests/fixtures and run applicable integrity checks.
 
 **Definition of Done**
-- [ ] Implementation exists.
-- [ ] Relevant tests pass.
-- [ ] Benchmark/run/reliability invariants pass where applicable.
-- [ ] Docs/task status are synchronized.
-- [ ] `git diff --check` passes.
-- [ ] Dedicated `task(1.1): ...` commit exists.
-- [ ] Push is verified when `origin` exists.
-- [ ] Claude stops before next task.
+- [x] Implementation exists.
+- [x] Relevant tests pass.
+- [x] Benchmark/run/reliability invariants pass where applicable.
+- [x] Docs/task status are synchronized.
+- [x] `git diff --check` passes.
+- [x] Dedicated `task(1.1): ...` commit exists.
+- [x] Push is verified when `origin` exists.
+- [x] Claude stops before next task.
 
 ---
 ### Task 1.2: GitHub Remote & Per-Task Workflow Baseline

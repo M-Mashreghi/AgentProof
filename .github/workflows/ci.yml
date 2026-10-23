@@ -17,6 +17,7 @@ jobs:
       - run: python -m pip check
       - run: python -m compileall -q src
       - run: ruff check .
+      - run: mypy
       - run: python -m agentproof.cli version
       - run: python scripts/validate_project.py
       - run: python -m pytest

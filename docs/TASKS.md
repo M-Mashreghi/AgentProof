@@ -3,7 +3,7 @@
 
 ## Phase 1 — Foundation, Benchmark Integrity & Research Protocol
 
-- [ ] **Task 1.1** — Python Package Scaffold & Development Tooling — Commit: `—` — GitHub: `—`
+- [x] **Task 1.1** — Python Package Scaffold & Development Tooling — Commit: `—` — GitHub: `—`
 - [ ] **Task 1.2** — GitHub Remote & Per-Task Workflow Baseline — Commit: `—` — GitHub: `—`
 - [ ] **Task 1.3** — Typed Configuration Loader — Commit: `—` — GitHub: `—`
 - [ ] **Task 1.4** — BenchmarkMetadata & Task Domain Models — Commit: `—` — GitHub: `—`

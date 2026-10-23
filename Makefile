@@ -1,10 +1,12 @@
-.PHONY: install test lint validate ci
+.PHONY: install test lint typecheck validate ci
 install:
 	python -m pip install -e ".[dev]"
 test:
-	pytest
+	python -m pytest
 lint:
 	ruff check .
+typecheck:
+	mypy
 validate:
 	python scripts/validate_project.py
-ci: lint test validate
+ci: lint typecheck test validate
