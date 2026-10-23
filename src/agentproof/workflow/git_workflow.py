@@ -14,7 +14,10 @@ import subprocess
 from dataclasses import dataclass, field
 from pathlib import Path
 
-COMMIT_SUBJECT_RE = re.compile(r"^task\((?P<task_id>\d+\.\d+)\): (?P<summary>\S.*)$")
+# ``task(<id>)`` for task work; ``docs(<id>)`` for ledger follow-ups that record a hash.
+COMMIT_SUBJECT_RE = re.compile(
+    r"^(?P<type>task|docs)\((?P<task_id>\d+\.\d+)\): (?P<summary>\S.*)$"
+)
 MAX_SUBJECT_LENGTH = 72
 TASK_HEADING_RE = re.compile(r"^### Task (\d+\.\d+):", flags=re.MULTILINE)
 
@@ -92,7 +95,7 @@ def validate_commit_subject(
     errors: list[str] = []
     match = COMMIT_SUBJECT_RE.match(subject)
     if match is None:
-        return [f"commit subject must match 'task(<id>): <summary>', got {subject!r}"]
+        return [f"commit subject must match 'task(<id>): <summary>' or 'docs(<id>): <summary>', got {subject!r}"]
     task_id = match.group("task_id")
     if len(subject) > MAX_SUBJECT_LENGTH:
         errors.append(f"commit subject exceeds {MAX_SUBJECT_LENGTH} characters")

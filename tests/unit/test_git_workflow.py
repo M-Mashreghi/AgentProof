@@ -43,7 +43,11 @@ def make_repo(tmp_path: Path, with_origin: bool = True) -> Path:
 
 @pytest.mark.parametrize(
     "subject",
-    ["task(1.2): add workflow checks", "task(1.3): load typed configs"],
+    [
+        "task(1.2): add workflow checks",
+        "task(1.3): load typed configs",
+        "docs(1.3): record task 1.3 commit in ledger",
+    ],
 )
 def test_valid_commit_subjects(subject):
     assert validate_commit_subject(subject, IDS) == []
@@ -57,6 +61,7 @@ def test_valid_commit_subjects(subject):
         "task(1.2):add workflow checks",
         "Task(1.2): add workflow checks",
         "task(1.2): ",
+        "feat(1.2): add workflow checks",
     ],
 )
 def test_malformed_commit_subjects(subject):

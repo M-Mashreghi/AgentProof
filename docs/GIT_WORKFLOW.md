@@ -17,7 +17,8 @@ python scripts/check_git_workflow.py pre-commit          # branch, behind-upstre
 python scripts/check_git_workflow.py post-push --task 1.2  # HEAD subject + upstream in sync
 ```
 
-- Commit subjects must match `task(<id>): <summary>`, reference a task id from
+- Commit subjects must match `task(<id>): <summary>` (or `docs(<id>): <summary>` for a
+  ledger follow-up), reference a task id from
   `docs/PROJECT_PHASES_AND_TASKS.md`, stay within 72 characters, and not end with a period.
 - Secrets, local environments, and private benchmark/trace directories must never be staged.
 - A missing `origin` is a warning (push blocked, mark `[!]`); the checker never creates,
