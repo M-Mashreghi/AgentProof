@@ -5,7 +5,7 @@
 
 - [x] **Task 1.1** — Python Package Scaffold & Development Tooling — Commit: `da39acc` — GitHub: [da39acc](https://github.com/M-Mashreghi/AgentProof/commit/da39acca0122e80eabe1c524d64018af334ac34b)
 - [x] **Task 1.2** — GitHub Remote & Per-Task Workflow Baseline — Commit: `d186732` — GitHub: [d186732](https://github.com/M-Mashreghi/AgentProof/commit/d186732aad56e3587d8300a8183e6695e8a62246)
-- [x] **Task 1.3** — Typed Configuration Loader — Commit: `—` — GitHub: `—`
+- [x] **Task 1.3** — Typed Configuration Loader — Commit: `9ae70b3` — GitHub: [9ae70b3](https://github.com/M-Mashreghi/AgentProof/commit/9ae70b385d7a84142165614cdaa4e97346526b5f)
 - [ ] **Task 1.4** — BenchmarkMetadata & Task Domain Models — Commit: `—` — GitHub: `—`
 - [ ] **Task 1.5** — AgentEvaluationUnit Model — Commit: `—` — GitHub: `—`
 - [ ] **Task 1.6** — RunIdentity & Seed Model — Commit: `—` — GitHub: `—`
