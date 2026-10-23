@@ -21,7 +21,7 @@ AgentProof/
 │   └── research/
 ├── examples/
 ├── src/agentproof/
-│   ├── config/
+│   ├── config/          # typed YAML config loader + provenance
 │   ├── domain/
 │   ├── benchmarks/
 │   ├── agents/
@@ -35,7 +35,8 @@ AgentProof/
 │   ├── costs/
 │   ├── evaluation/
 │   ├── reporting/
-│   └── dashboard/
+│   ├── dashboard/
+│   └── workflow/        # per-task git workflow guards
 ├── tests/
 ├── reports/
 ├── scripts/
@@ -65,5 +66,6 @@ docs/MCP_CONTRACT_TESTING.md
 docs/SLO_AND_BUDGET_POLICY.md
 docs/REFERENCE_DEMO.md
 docs/CLI_SPEC.md
+docs/CONFIGURATION.md
 docs/PR_REPORT_SPEC.md
 ```

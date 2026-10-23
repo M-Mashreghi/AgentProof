@@ -160,7 +160,11 @@ def check_task_sources() -> None:
 
 
 def check_referenced_paths() -> None:
+    # Tests build throwaway repositories with their own configs/ trees, so their
+    # path literals do not refer to this repository.
     for path in iter_files(*TEXT_SUFFIXES):
+        if rel(path).parts[0] == "tests":
+            continue
         content = read_text(path)
         if content is None:
             continue
