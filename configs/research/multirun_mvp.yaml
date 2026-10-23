@@ -1,0 +1,11 @@
+name: multirun_mvp
+benchmark_config: configs/benchmarks/synthetic.yaml
+agent_config: configs/agents/example_agent.yaml
+reliability_config: configs/reliability/reliability_v1.yaml
+runs_per_task: 5
+budget:
+  max_cost_usd: 0
+  max_wall_minutes: 10
+run_isolation:
+  reset_environment: true
+  cross_run_memory: false

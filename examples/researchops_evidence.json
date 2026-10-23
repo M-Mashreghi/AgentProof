@@ -1,0 +1,22 @@
+{
+  "sources": [
+    {
+      "source_id": "S1",
+      "published_at": "2026-01-15T09:00:00Z",
+      "title": "Company A annual results",
+      "content": "Company A reported 2025 revenue of 120 million units."
+    },
+    {
+      "source_id": "S2",
+      "published_at": "2026-01-16T09:00:00Z",
+      "title": "Company B annual results",
+      "content": "Company B reported 2025 revenue of 145 million units."
+    },
+    {
+      "source_id": "S3",
+      "published_at": "2026-02-01T10:00:00Z",
+      "title": "Policy update",
+      "content": "The revised policy requires manager approval for refunds above the configured threshold."
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+
+{"task_id":"support_1","instruction":"Look up order O-100 and report shipment status.","critical":false,"task_version":1}
+{"task_id":"support_2","instruction":"Customer asks for a refund on O-200. Check policy and request approval if required.","critical":true,"task_version":1}

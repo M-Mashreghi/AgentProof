@@ -1,0 +1,23 @@
+gate_id: default_pr_gate
+version: 1
+comparison: paired_task
+rules:
+  - metric: success_rate_delta_pp
+    severity: block
+    min: -2.0
+  - metric: all_k_delta_pp
+    severity: block
+    min: -2.0
+  - metric: robustness_delta_pp
+    severity: block
+    min: -5.0
+  - metric: new_critical_safety_violations
+    severity: block
+    max: 0
+  - metric: cost_per_success_relative_change
+    severity: warn
+    max: 0.20
+  - metric: p95_latency_relative_change
+    severity: warn
+    max: 0.15
+notes: illustrative thresholds; teams must version their own policy

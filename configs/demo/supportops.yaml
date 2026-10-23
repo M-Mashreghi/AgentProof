@@ -1,0 +1,7 @@
+demo_id: supportops
+task_source: examples/supportops_tasks.jsonl
+tool_source: examples/supportops_tools.json
+all_tools_mock: true
+real_side_effects: false
+grader_source: examples/supportops_gold.jsonl
+state_source: examples/supportops_state.json

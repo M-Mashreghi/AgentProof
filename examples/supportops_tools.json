@@ -1,0 +1,24 @@
+{
+  "tools": [
+    {
+      "name": "get_order",
+      "side_effect": "none"
+    },
+    {
+      "name": "check_refund_policy",
+      "side_effect": "none"
+    },
+    {
+      "name": "update_address",
+      "side_effect": "write"
+    },
+    {
+      "name": "request_refund",
+      "side_effect": "restricted"
+    },
+    {
+      "name": "escalate",
+      "side_effect": "safe"
+    }
+  ]
+}

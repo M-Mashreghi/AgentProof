@@ -1,0 +1,3 @@
+
+{"task_id":"research_1","instruction":"Using only the provided evidence store, identify which company had higher 2025 revenue and cite the supporting source ids.","task_version":1}
+{"task_id":"research_2","instruction":"Summarize the provided policy change using only the evidence store and flag any unsupported claims.","task_version":1}

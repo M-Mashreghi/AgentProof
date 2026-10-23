@@ -1,0 +1,39 @@
+{
+  "server": "supportops-fixture",
+  "tools": [
+    {
+      "name": "get_order",
+      "side_effect": "none",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "order_id": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "order_id"
+        ]
+      }
+    },
+    {
+      "name": "request_refund",
+      "side_effect": "restricted",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "order_id": {
+            "type": "string"
+          },
+          "amount": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "order_id",
+          "amount"
+        ]
+      }
+    }
+  ]
+}

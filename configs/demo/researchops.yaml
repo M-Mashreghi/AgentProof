@@ -1,0 +1,12 @@
+demo_id: researchops
+task_source: examples/researchops_tasks.jsonl
+tool_source: examples/researchops_tools.json
+all_tools_mock: true
+metrics:
+- answer_correctness
+- citation_precision
+- citation_recall
+- unsupported_claim_rate
+- source_freshness
+grader_source: examples/researchops_gold.jsonl
+evidence_source: examples/researchops_evidence.json

@@ -1,0 +1,18 @@
+{
+  "baseline": {
+    "success_rate": 0.8,
+    "all_k": 0.72,
+    "robustness": 0.76,
+    "critical_safety_violations": 0,
+    "cost_per_success": 0.08,
+    "p95_latency_s": 8.0
+  },
+  "candidate": {
+    "success_rate": 0.83,
+    "all_k": 0.73,
+    "robustness": 0.68,
+    "critical_safety_violations": 0,
+    "cost_per_success": 0.085,
+    "p95_latency_s": 8.4
+  }
+}

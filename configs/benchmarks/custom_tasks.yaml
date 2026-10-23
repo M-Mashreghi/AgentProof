@@ -1,0 +1,7 @@
+benchmark_id: custom_tasks
+benchmark_version: 1
+adapter: jsonl
+task_source: examples/tasks.jsonl
+grader:
+  type: exact_or_structured
+grader_source: examples/tasks_gold.jsonl

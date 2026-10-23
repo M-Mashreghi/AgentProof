@@ -1,0 +1,13 @@
+benchmark_id: synthetic_reliability
+benchmark_version: 1
+adapter: synthetic
+task_source: examples/tasks.jsonl
+capabilities:
+  deterministic_reset: true
+  exact_grader: true
+  prompt_perturbation: true
+  structural_perturbation: true
+  fault_injection: true
+  cost_capture: true
+  trajectory_capture: true
+grader_source: examples/tasks_gold.jsonl

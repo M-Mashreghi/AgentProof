@@ -1,0 +1,12 @@
+benchmark_id: swebench_verified
+adapter: swebench
+enabled: false
+subset: verified
+expected_instances: 500
+requirements:
+  docker: true
+  pin_harness_version: true
+  pin_agent_scaffold: true
+guards:
+  no_public_solution_retrieval: true
+  isolate_repo_per_run: true

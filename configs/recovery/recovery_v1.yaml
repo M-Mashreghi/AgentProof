@@ -1,0 +1,12 @@
+version: 1
+policies:
+  - none
+  - retry_once
+  - replan_once
+  - verifier_then_retry
+  - selective_abstention
+verifier:
+  gold_answer_access: false
+comparison:
+  matched_conditions: true
+  report_cost_overhead: true

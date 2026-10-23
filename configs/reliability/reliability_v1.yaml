@@ -1,0 +1,22 @@
+version: 1
+runs_per_task: 5
+dimensions:
+  capability: true
+  consistency: true
+  predictability: true
+  robustness: true
+  recovery: true
+  safety: true
+  economics: true
+consistency:
+  outcome: true
+  resource_variance: true
+  trajectory_action_distribution: true
+  trajectory_sequence: true
+predictability:
+  brier: true
+  auroc: true
+  reliability_curve: true
+  risk_coverage: true
+aggregate:
+  enabled: false

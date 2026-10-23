@@ -1,0 +1,13 @@
+version: 1
+semantics_preserving:
+  - prompt_paraphrase
+  - reorder_independent_fields
+  - add_irrelevant_context
+  - harmless_format_change
+structural:
+  - tool_response_field_order
+  - optional_metadata_insertion
+semantics_changing:
+  enabled: false
+validation:
+  require_invariant_check: true

@@ -1,0 +1,53 @@
+{
+  "resourceSpans": [
+    {
+      "resource": {
+        "attributes": [
+          {
+            "key": "service.name",
+            "value": {
+              "stringValue": "support-agent"
+            }
+          }
+        ]
+      },
+      "scopeSpans": [
+        {
+          "spans": [
+            {
+              "traceId": "abc",
+              "spanId": "root",
+              "name": "invoke_agent",
+              "startTimeUnixNano": "1000",
+              "endTimeUnixNano": "5000",
+              "attributes": [
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "mock-model"
+                  }
+                }
+              ]
+            },
+            {
+              "traceId": "abc",
+              "spanId": "tool1",
+              "parentSpanId": "root",
+              "name": "execute_tool get_order",
+              "startTimeUnixNano": "2000",
+              "endTimeUnixNano": "3000",
+              "attributes": [
+                {
+                  "key": "tool.name",
+                  "value": {
+                    "stringValue": "get_order"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

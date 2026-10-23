@@ -1,0 +1,7 @@
+version: 1
+transport: fixture
+check_discovery: true
+check_input_schema: true
+check_output_parseability: true
+negative_argument_tests: true
+side_effect_policy_required: true

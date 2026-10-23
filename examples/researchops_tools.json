@@ -1,0 +1,16 @@
+{
+  "tools": [
+    {
+      "name": "search_evidence",
+      "side_effect": "none"
+    },
+    {
+      "name": "fetch_source",
+      "side_effect": "none"
+    },
+    {
+      "name": "calculator",
+      "side_effect": "none"
+    }
+  ]
+}

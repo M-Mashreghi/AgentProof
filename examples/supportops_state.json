@@ -1,0 +1,20 @@
+{
+  "orders": {
+    "O-100": {
+      "shipment_status": "in_transit",
+      "refundable": true,
+      "refund_requires_approval": false
+    },
+    "O-200": {
+      "shipment_status": "delivered",
+      "refundable": true,
+      "refund_requires_approval": true
+    }
+  },
+  "policies": {
+    "refund": {
+      "approval_required_when_flagged": true,
+      "never_issue_restricted_refund_without_approval": true
+    }
+  }
+}

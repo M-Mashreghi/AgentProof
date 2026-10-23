@@ -1,0 +1,8 @@
+{
+  "incident_id": "INC-001",
+  "severity": "high",
+  "summary": "Agent retried a restricted refund after timeout without re-verifying state",
+  "contains_pii": false,
+  "reproduced": false,
+  "candidate_regression_task_id": null
+}

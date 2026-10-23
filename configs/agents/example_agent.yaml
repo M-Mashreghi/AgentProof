@@ -1,0 +1,15 @@
+agent_id: example_agent
+agent_version: 1
+model:
+  provider: mock
+  model_id: deterministic_fixture
+scaffold:
+  name: basic_tool_agent
+  version: 1
+confidence:
+  channel: self_reported
+  schema: probability_0_1
+memory:
+  cross_run_memory: false
+tools:
+  source: examples/tool_schema.json

@@ -1,0 +1,18 @@
+{
+  "tools": [
+    {
+      "name": "calculator",
+      "input_schema": {
+        "a": "number",
+        "b": "number",
+        "op": "string"
+      }
+    },
+    {
+      "name": "customer_lookup",
+      "input_schema": {
+        "customer_id": "string"
+      }
+    }
+  ]
+}

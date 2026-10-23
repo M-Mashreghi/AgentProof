@@ -1,0 +1,6 @@
+name: recovery_study
+benchmark_config: configs/benchmarks/synthetic.yaml
+agent_config: configs/agents/example_agent.yaml
+recovery_config: configs/recovery/recovery_v1.yaml
+matched_conditions: true
+report_cost_latency_overhead: true

@@ -1,0 +1,4 @@
+adapter: openai_otlp_profile
+base_adapter: configs/traces/otlp.yaml
+version: 1
+map_agent_tool_spans: true

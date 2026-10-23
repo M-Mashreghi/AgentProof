@@ -1,0 +1,11 @@
+version: 1
+faults:
+  - timeout_once
+  - http_500_once
+  - rate_limit_once
+  - malformed_json_once
+  - missing_optional_field
+  - delayed_tool_response
+guards:
+  do_not_corrupt_grader: true
+  log_fault_trigger: true

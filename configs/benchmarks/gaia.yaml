@@ -1,0 +1,9 @@
+benchmark_id: gaia
+adapter: gaia
+enabled: false
+requirements:
+  external_dataset: true
+  pin_dataset_version: true
+reliability:
+  repeated_runs: true
+  prompt_perturbations: optional

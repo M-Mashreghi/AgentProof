@@ -1,0 +1,7 @@
+name: robustness_study
+benchmark_config: configs/benchmarks/synthetic.yaml
+agent_config: configs/agents/example_agent.yaml
+reliability_config: configs/reliability/reliability_v1.yaml
+perturbation_config: configs/perturbations/perturbations_v1.yaml
+fault_config: configs/faults/faults_v1.yaml
+matched_baseline: true

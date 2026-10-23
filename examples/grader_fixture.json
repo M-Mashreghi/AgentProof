@@ -1,0 +1,13 @@
+{
+  "task_id": "t1",
+  "grader_version": "fixture_v1",
+  "expected": {
+    "value": 5
+  },
+  "positive_output": {
+    "value": 5
+  },
+  "negative_output": {
+    "value": 4
+  }
+}

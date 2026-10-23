@@ -1,0 +1,5 @@
+adapter: otlp_json
+version: 1
+redaction:
+  mode: allowlist_plus_hash
+  retain_unknown_attributes: true

@@ -1,0 +1,11 @@
+benchmark_id: tau_bench
+adapter: tau_bench_style
+enabled: false
+requirements:
+  environment_reset: true
+  tool_schema_versioning: true
+  policy_constraints: true
+reliability:
+  repeated_runs: true
+  tool_faults: true
+  safety_constraints: true

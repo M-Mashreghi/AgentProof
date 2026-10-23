@@ -1,0 +1,11 @@
+{
+  "base_task_id": "t1",
+  "variant_id": "t1_para_1",
+  "family": "prompt_paraphrase",
+  "semantic_class": "semantics_preserving",
+  "instruction": "Use the calculator to compute the sum of 2 and 3.",
+  "expected_invariant": {
+    "value": 5
+  },
+  "seed": 123
+}
