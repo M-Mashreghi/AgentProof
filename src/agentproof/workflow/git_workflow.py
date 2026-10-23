@@ -95,7 +95,10 @@ def validate_commit_subject(
     errors: list[str] = []
     match = COMMIT_SUBJECT_RE.match(subject)
     if match is None:
-        return [f"commit subject must match 'task(<id>): <summary>' or 'docs(<id>): <summary>', got {subject!r}"]
+        return [
+            "commit subject must match 'task(<id>): <summary>' or "
+            f"'docs(<id>): <summary>', got {subject!r}"
+        ]
     task_id = match.group("task_id")
     if len(subject) > MAX_SUBJECT_LENGTH:
         errors.append(f"commit subject exceeds {MAX_SUBJECT_LENGTH} characters")
